@@ -1,0 +1,376 @@
+@charset "UTF-8";
+
+/*ESTILOS PARA ELEMENTOS AGREGADOS MEDIANTE JS*/
+
+form .labelTurno {
+  padding: 0.5em;
+  margin-bottom: 1em;
+
+  border-radius: 1em;
+  box-shadow: 1px 1px 10px white;
+}
+/**/
+
+@media (min-width: 768px) {
+  #seccionReserva {
+    min-height: 330px;
+  }
+}
+
+
+
+
+/*RESETEO DE ESTILOS*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; }
+
+input {
+  color: unset;
+  background-color: transparent;
+  cursor: text;
+  font: unset;
+  padding: 0px;
+  border: none;
+  border-image: none; }
+
+textarea {
+  color: unset;
+  border: none;
+  border-image: none;
+  background-color: transparent;
+  flex-direction: column;
+  resize: auto;
+  cursor: text;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  column-count: initial !important;
+  font: unset; }
+
+select {
+  color: unset;
+  background-color: transparent;
+  cursor: default;
+  border: none; }
+
+/*FIN DEL RESETEO DE ESTILOS*/
+/*ESTILOS GENERALES*/
+.no-gutters {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+hr {
+  border-top: 1.5px solid #282727; }
+
+html {
+  font-size: 10px; }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px; } }
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px; } }
+
+/*CONTENEDOR TITULO DE PAGINA*/
+.divTituloPagina {
+  background-color: #282727;
+  margin-left: -15px;
+  margin-right: -15px; }
+  @media (min-width: 992px) {
+    .divTituloPagina {
+      height: 110px; }
+      .divTituloPagina .tituloPagina {
+        position: relative;
+        top: -17.5px; } }
+
+/*FIN DE ESTILOS GENERALES*/
+/*FORMATO MENU*/
+header .navbar {
+  background-color: #282727;
+  padding: 0px 20px 0px 20px; }
+  @media (min-width: 992px) {
+    header .navbar {
+      height: 110px;
+      padding: 0px 35px 0px 35px; } }
+  header .navbar .nombreEscuela.navbar-brand:hover {
+    text-shadow: 1px 1px 10px rgba(243, 213, 145, 0.9); }
+  header .navbar button {
+    width: 20px;
+    height: 20px;
+    border: none !important; }
+  header .navbar button span {
+    width: 20px !important;
+    height: 20px !important; }
+
+header .navbar li {
+  position: relative; }
+
+header ul li:hover {
+  text-shadow: 1px 1px 5px white; }
+
+/*SUB-MENU*/
+header .navbar .sub-menu {
+  display: none;
+  text-shadow: none; }
+  @media (min-width: 992px) {
+    header .navbar .sub-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      z-index: 100;
+      background-color: rgba(77, 57, 97, 0.6);
+      border-radius: 5px;
+      text-shadow: none;
+      min-width: 100%;
+      white-space: nowrap; } }
+  header .navbar .sub-menu li {
+    display: block;
+    text-indent: 2em;
+    line-height: 2em; }
+    @media (min-width: 992px) {
+      header .navbar .sub-menu li {
+        display: block;
+        text-indent: unset;
+        line-height: 2em; } }
+
+header .navbar li:hover .sub-menu {
+  display: block; }
+
+/*FIN FORMATO MENU*/
+/*FOOTERS*/
+footer {
+  background-color: #282727;
+  margin: 0px -15px 0px -15px;
+  padding: 0px 35px 0px 35px; }
+  footer img {
+    width: 20px;
+    height: 20px; }
+    @media (min-width: 768px) {
+      footer img {
+        width: 30px;
+        height: 30px; } }
+
+/*FIN DE FOOTERS*/
+/*INDEX*/
+main .divFondoEstrellas {
+  background-image: url(../recursos/imagen_fondo_index.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 565px;
+  padding-top: 100px; }
+  main .divFondoEstrellas .nombreEscuela {
+    animation-name: animacionNombreEscuela;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    animation-delay: 0s; }
+
+@keyframes animacionNombreEscuela {
+  0% {
+    text-shadow: 3px 3px 5px  violet; }
+  50% {
+    text-shadow: 3px 3px 5px rgba(238, 130, 238, 0.03); }
+  100% {
+    text-shadow: 3px 3px 5px  violet; } }
+
+/*FIN INDEX*/
+/*PAGINA "NUESTRA VISION" "QUIENES SOMOS" "CONSULTORIA"*/
+#imagenPlaneta {
+  background-image: url(../recursos/tierra.jpg); }
+
+#imagenLibro {
+  background-image: url(../recursos/libroRectangular.jpg); }
+
+.imagenRectangular {
+  height: 80px;
+  background-position: center;
+  background-size: cover; }
+
+.imagenRedonda {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; }
+  @media (max-width: 576px) {
+    .imagenRedonda {
+      max-width: 300px; } }
+  @media (min-width: 992px) {
+    .imagenRedonda {
+      max-width: 350px; } }
+
+#consultoriaMain section div {
+  position: relative; }
+
+#consultoriaMain a:hover {
+  text-shadow: 1px 1px 10px white; }
+
+#natal, #solar, #compuesta, #constelaciones {
+  position: absolute;
+  top: -104.25px; }
+  @media (min-width: 768px) {
+    #natal, #solar, #compuesta, #constelaciones {
+      top: -145.75px; } }
+  @media (min-width: 992px) {
+    #natal, #solar, #compuesta, #constelaciones {
+      top: -220px; } }
+
+/*FIN PAGINA "NUESTRA VISION" "QUIENES SOMOS" "CONSULTORIA"*/
+/*FORMULARIOS DE CONTACTO*/
+@media (min-width: 768px) {
+  main .contactoSeccion {
+    border-radius: 5px; } 
+  }
+
+main .principalContacto .tituloSeccion {
+  text-align: center; }
+
+main .principalContacto .datosContacto p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+main .contactoSeccion, main .principalContacto {
+  background-color: rgba(243, 213, 145, 0.9); }
+  main .contactoSeccion input, main .principalContacto input {
+    border-bottom: solid 1px #282727; }
+  main .contactoSeccion input.boton, main .principalContacto input.boton {
+    border: none; }
+  main .contactoSeccion textarea, main .principalContacto textarea {
+    border-bottom: solid 1px #282727;
+    padding: 0px; }
+  main .contactoSeccion select, main .principalContacto select {
+    border: solid 1px #282727;
+    border-radius: 4px; }
+
+/*FIN FORMULARIOS DE CONTACTO*/
+/*TIPOGRAFIA*/
+P, input, textarea, select, label, ::placeholder {
+  color: black;
+  font-family: "helvetica", sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem; }
+
+footer p {
+  color: #e0dfdf;
+  font-family: "helvetica", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0px; }
+
+.boton {
+  color: black;
+  font-family: "georgia", "palatino", "book antiqua", "palatino linotype", serif;
+  font-weight: 600;
+  letter-spacing: normal;
+  font-style: italic; }
+
+li {
+  color: #e0dfdf;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  letter-spacing: normal; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+.nombreEscuela {
+  color: rgba(243, 213, 145, 0.9) !important;
+  font-family: "georgia", "palatino", "book antiqua", "palatino linotype", serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center; }
+
+nav .nombreEscuela {
+  letter-spacing: 2px; }
+
+.bajadaNombreEscuela {
+  color: rgba(243, 213, 145, 0.9);
+  font-family: "helvetica", sans-serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  text-align: center; }
+
+.tituloPagina {
+  color: rgba(243, 213, 145, 0.9);
+  font-family: "georgia", "palatino", "book antiqua", "palatino linotype", serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center; }
+
+.bajadaTituloPagina {
+  color: #e0dfdf;
+  font-family: "helvetica", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center; }
+
+.tituloSeccion, .subtituloSeccion {
+  color: black;
+  font-family: "georgia", "palatino", "book antiqua", "palatino linotype", serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 0.36em; }
+
+.tituloFooter {
+  color: rgba(243, 213, 145, 0.9);
+  font-family: "georgia", "palatino", "book antiqua", "palatino linotype", serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 0.36em; }
+
+/*TAMAÑO FUENTE*/
+P, input, textarea, select, label, ::placeholder, .bajadaNombreEscuela {
+  font-size: 1rem; }
+
+li {
+  font-size: 1rem; }
+
+.tituloPagina {
+  font-size: 2rem; }
+
+.bajadaTituloPagina {
+  font-size: 0.87rem; }
+
+.tituloSeccion {
+  font-size: 1.4rem; }
+
+.subtituloSeccion {
+  font-size: 1.2rem; }
+
+nav .nombreEscuela {
+  font-size: 1.25rem; }
+
+.boton {
+  font-size: 1.25rem; }
+
+.tituloFooter {
+  font-size: 1.1rem; }
+
+footer p {
+  font-size: 0.75rem; }
+
+.nombreEscuela {
+  font-size: 24px; }
+
+@media (min-width: 576px) {
+  .nombreEscuela {
+    font-size: 45px; } }
+
+@media (min-width: 992px) {
+  .nombreEscuela {
+    font-size: 60px; } }

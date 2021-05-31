@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" intial-scale="1.0">
+    <meta name="description" content="Espacio Nuevo Tiempo esta conformado por un grupo de mujeres con larga trayectoria y experencia acompañando procesos de autoindagación, en busca del bienestar fisico, espiritual y emocional.">
+    <meta name="keywords"  content="consultoría, astrologia, constelaciones familiares, carta natal, revolucion solar, sinastria, ciclos">     
+    <link rel="icon" type="image/png" href="../recursos/favicon.png">      
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--ESTILOS PROPIOS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Consultoria - Espacio Nuevo Tiempo</title>    
+  </head>
+
+  <body class="container-md">
+
+    <!--  HEADER  -->
+    <header class="row">
+      <nav class="navbar navbar-expand-lg navbar-dark col-12 py-2">
+        <div id="userDisplay"></div>
+        <a class="nombreEscuela navbar-brand" href="../index.html">Espacio Nuevo Tiempo</a>
+        <button class="navbar-toggler p-0 m-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon p-0 m-0"></span>
+        </button>
+        <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">QUIENES SOMOS</a>
+              <ul class="sub-menu">
+                <li><a class="nav-link" href="nuestra_vision.html">Nuestra Vision</a></li>
+                <li><a class="nav-link" href="equipo.html">El Equipo</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="escuela.html">ESCUELA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="consultoria.html">CONSULTORIA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="alquiler_de_salas.html">ALQUILER DE SALAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mis_turnos.html">MIS TURNOS</a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+    </header>
+
+    <!-- MAIN -->
+    <main id="misTurnosMain">
+
+      <!-- TITULO PAGINA-->
+      <section class="divTituloPagina row justify-content-center align-items-center py-3">
+        <h1 class="tituloPagina col-12 my-0">Mis Turnos</h1>
+      </section>
+
+      <!-- CONTENIDO PRINCIPAL -->
+
+      <!-- SECCION "MIS DATOS"-->
+      <section id="seccionMisDatos" class="seccionMisDatos row justify-content-center my-md-4">
+        <div  class="col-12 col-md-10 py-4 px-3">
+          <h2 class="tituloSeccion row justify-content-center">Mis datos</h2>
+          
+            <!-- mostrar solo si no hay datos cargados -->
+          <div id="sinDatosPersonales">
+            <h3>Todavia no hay datos cargados</h3>            
+            <div class="mt-4 text-center boton" id="btnCargarDatosPersonales">Cargar mis datos!</div>
+          </div>
+
+            <!-- mostrar solo si hay datos cargados -->
+          <div id="conDatosPersonales">
+            <div id="datoNombre"><span class="negrita">Nombre:</span> <span class="dato"></span></div>
+            <div id="datoTelefono"><span class="negrita">Telefono:</span> <span class="dato"></span></div>
+            <div id="datoEmail"><span class="negrita">Email:</span> <span class="dato"></span></div>
+            
+            <div class="mt-4 text-center boton" id="btnModificarDatosPersonales">Modificar datos</div>
+          </div>
+
+            <!-- pop up que se dispara para modificar o cargar datos-->
+          <div id="containerPopUpDatos" class="containerPopUp">
+            <div>
+              <form id="formularioDatosPersonalesPopUp" class="formularioPopUp row no-gutters justify-content-center mt-3" action="" method="" enctype="">
+                <div class="close-pop"><img src="../recursos/closePop.png" alt="" width="100%" height="100%"></div>
+                <fieldset class="col-12">
+                  <div class="row justify-content-center">
+                    <div class="row w-100 no-gutters justify-content-around">
+                      <input class="col-5 mb-3" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                      <input class="col-5 mb-3" type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                      <input class="col-5 mb-3" type="tel" name="telefono" id="telefono" placeholder="Telefono" required>
+                      <input class="col-5 mb-3" type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                </fieldset>
+                <!--boton "siguiente"-->
+                <input class="col-auto boton" value="Actualizar datos" type="submit">
+              </form>
+            </div>
+          </div>  
+        </div>   
+      </section>        
+      
+      <!-- "SECCION MIS TURNOS"-->
+      <section id="seccionMisTurnos" class="seccionMisTurnos row justify-content-center my-md-4">
+        <div class="col-12 col-md-10 py-4 px-3">
+          <h2 class="tituloSeccion row justify-content-center">Mis turnos</h2>
+
+          <!-- mostrar solo si no hay turnos reservados -->
+          <div id="sinTurnos">
+            <h3>Todavia no tenes turnos reservados</h3>            
+            <div class="mt-4 text-center boton btnReservarTurno">Reservar turno!</div>
+          </div>
+
+            <!-- mostrar solo si hay turnos reservados -->
+          <div id="conTurnos">
+            <div id="turnosMostrados"></div>
+            
+            <div class="mt-4 text-center boton btnReservarTurno">Reservar nuevo turno!</div>
+          </div>
+
+            <!-- pop up que se dispara para modificar o cargar datos-->
+          <div id="containerPopUpTurnos" class="containerPopUp">
+            <div>
+              <form id="formularioReservaPopUp" class="formularioPopUp row no-gutters justify-content-center mt-3" action="" method="" enctype="">
+                <div class="close-pop"><img src="../recursos/closePop.png" alt="" width="100%" height="100%"></div>
+                <fieldset class="col-12">
+                  <div class="row justify-content-center">
+                    <!--select tipo de consulta-->
+                    <div class="row w-100 no-gutters justify-content-around">
+                      <select id="tipoConsulta" class="col-5 mb-3" name="tipoConsulta" required>
+                        <option selected="true" disabled="disabled">Que tipo de consulta queres?</option>
+                        <option value="natal">Carta natal</option>
+                        <option value="compuesta">Carta compuesta y Sinastria</option>
+                        <option value="solar">Revolucion solar, Transitos y Progresiones</option>
+                        <option value="constelaciones">Constelaciones Familiares</option>
+                      </select>
+                      <!--select de consultoras-->
+                      <select id="formSelectConsultora" class="col-5 mb-3" name="formSelectConsultora" disabled required>
+                        <option value="" selected='true' disabled='true'>Elegir consultora</option>
+                      </select>
+                    </div>
+                  </div>
+                </fieldset>
+                <!--fieldset de turnos a mostrar-->
+                <fieldset id="turnosaMostrar" class="col-12 text-center d-flex flex-column align-items-center">
+                </fieldset>
+                <!--boton "reservar turno"-->
+                <input class="col-auto align boton" value="Reservar turno!" type="submit">
+              </form>
+              <!--"pantalla confirmacion de reserva"-->
+              <div id="confirmacionReservaPopUp" class="formularioPopUp">
+                <div class="close-pop"><img src="../recursos/closePop.png" alt="" width="100%" height="100%"></div>
+
+              </div>
+            </div>
+          </div>  
+            
+        </div>   
+      </section>        
+
+
+
+
+
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="row py-2 justify-content-center justify-content-lg-between align-items-center">
+      <div class="col-auto d-none d-lg-block">
+          <h3 class="tituloFooter">Contacto</h3>
+          <p>Tel: xxxx-xxxx</p>
+          <p>Mail: xxxx@xxxx.com.ar</p>
+          <p>Direccion: xxxxxx xxxx, CABA, Argentina</p>
+      </div>
+      <div class="col-auto">
+          <a href=""><img src="../recursos/social_media/facebook_1.png" alt="logo facebook" height="20px" width="20px" class="mx-2"></a>
+          <a href=""><img src="../recursos/social_media/ig_1.png" alt="logo instagram" height="20px" width="20px" class="mx-2"></a>
+          <a href=""><img src="../recursos/social_media/youtube_1.png" alt="logo youtube" height="20px" width="20px" class="mx-2"></a>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS-->
+      <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+      <!--JavaScript propio-->
+    <script src="../js/variables_funciones.js"></script>  
+    <script src="../js/mis_turnos.js"></script>
+  </body>
+</html>

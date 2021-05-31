@@ -1,0 +1,10 @@
+CoderHouse - Curso JavaScript - Camada 14155
+Entrega Proyecto Final
+Estudiante: Nicolás Enrico Aruguete
+
+--
+
+Las funcionalidades agregadas permiten al usuario cargar sus datos personales (y posteriormente modificarlos) y reservar turnos a su nombre (asi como cancelarlos). Para ello, la pagina toma los datos de los turnos y las consultoras disponibles desde un back-end simulado, mediante llamadas ajax, asi como tambien actualiza los cambios efectuados sobre esos datos (reserva de turnos y asignacion de un consultante al turno reservado) mediante el mismo metodo.
+Esto se ve reflejado en las paginas "Consultoria" y "Mis Turnos".
+
+--

@@ -1,0 +1,16 @@
+[
+  {
+    "nombre": "Lucia",
+    "natal": true,
+    "compuesta": true,
+    "solar": true,
+    "constelaciones": true
+  },
+  {
+    "nombre": "Flavia",
+    "natal": true,
+    "compuesta": false,
+    "solar": true,
+    "constelaciones": false
+  }
+]

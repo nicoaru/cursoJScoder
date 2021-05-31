@@ -1,0 +1,102 @@
+[
+  {
+    "id": "turno1",
+    "consultora": "Lucia",
+    "dia": 6,
+    "mes": "Mayo",
+    "año": 2021,
+    "hora": "10:00",
+    "reservado": false,
+    "consultanteAsignado": null
+  },
+  {
+    "id": "turno2",
+    "consultora": "Lucia",
+    "dia": 6,
+    "mes": "Mayo",
+    "año": 2021,
+    "hora": "12:00",
+    "reservado": false,
+    "consultanteAsignado": null
+  },
+  {
+    "id": "turno3",
+    "consultora": "Lucia",
+    "dia": 6,
+    "mes": "Mayo",
+    "año": 2021,
+    "hora": "15:00",
+    "reservado": false,
+    "consultanteAsignado": null
+  },
+  {
+    "id": "turno4",
+    "consultora": "Lucia",
+    "dia": 6,
+    "mes": "Mayo",
+    "año": 2021,
+    "hora": "17:00",
+    "reservado": false,
+    "consultanteAsignado": null
+  },
+  {
+    "id": "turno5",
+    "consultora": "Lucia",
+    "dia": 6,
+    "mes": "Mayo",
+    "año": 2021,
+    "hora": "19:00",
+    "reservado": false,
+    "consultanteAsignado": null
+  },
+  {
+    "id": "turno6",
+    "consultora": "Flavia",
+    "dia": 6,
+    "mes": "Mayo",
+    "año": 2021,
+    "hora": "10:30",
+    "reservado": false,
+    "consultanteAsignado": null
+  },
+  {
+    "id": "turno7",
+    "consultora": "Flavia",
+    "dia": 6,
+    "mes": "Mayo",
+    "año": 2021,
+    "hora": "12:30",
+    "reservado": false,
+    "consultanteAsignado": null
+  },
+  {
+    "id": "turno8",
+    "consultora": "Flavia",
+    "dia": 6,
+    "mes": "Mayo",
+    "año": 2021,
+    "hora": "15:30",
+    "reservado": false,
+    "consultanteAsignado": null
+  },
+  {
+    "id": "turno9",
+    "consultora": "Flavia",
+    "dia": 6,
+    "mes": "Mayo",
+    "año": 2021,
+    "hora": "17:30",
+    "reservado": false,
+    "consultanteAsignado": null
+  },
+  {
+    "id": "turno10",
+    "consultora": "Flavia",
+    "dia": 6,
+    "mes": "Mayo",
+    "año": 2021,
+    "hora": "19:30",
+    "reservado": false,
+    "consultanteAsignado": null
+  }
+]
